@@ -1,28 +1,20 @@
-### your site title here
+# Site title
+title: Wen Taichi
+description: Unity Game Developer
 
-title: Your Name
-description: subtitle | affiliations | motto
-
-baseurl: /gradfolio #name of GitHub repository
-url: "" #custom url to be used instead of GitHub repository
-email: #
+# URL
+baseurl: ""
+url: ""
 
 # Pagination
-paginate: 4
-permalink: /blog/:year/:title/
+paginate: 5
 paginate_path: /blog/page:num/
+permalink: /blog/:year/:month/:title/
 
 # Social media links in footer
-twitter: "#"
-linkedin: "#"
-stackoverflow: "#"
-github: "#"
-researchgate: "#"
-orcid: "#"
-quora: "#"
-instagram: "#"
-facebook: "#"
-
+email: daleth90@gmail.com
+linkedin: "wentaichi"
+github: "daleth90"
 
 # Markdown
 highlighter: rouge
@@ -31,7 +23,7 @@ markdown: kramdown
 # Tracker
 analytics:
 
-# optimization -> compress.html
+# Optimization -> compress.html
 compress_html:
   clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
   comments: ["<!-- ", " -->"]
@@ -42,7 +34,7 @@ compress_html:
   profile: false
   startings: []
 
-#collection
+# Collection
 collections:
   projects:
     output: true
