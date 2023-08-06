@@ -36,11 +36,7 @@ compress_html:
 
 # Collection
 collections:
-  projects:
-    output: true
-    permalink: /projects/:name/
-    order:
-      
+  - projects
 
 sass:
   sass_dir: /assets/css/_sass
