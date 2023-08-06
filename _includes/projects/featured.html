@@ -1,0 +1,10 @@
+<div class="featured">
+  <h3>{{ include.title }}</h3>
+  {% if include.description != "" %}
+    <h6>{{ include.description }}</h6>
+  {% endif %}
+  <div class="wrapper">
+    <img class="box" width="30%" src="{{ include.image }}">
+    {{ include.content }}
+  </div>
+</div>

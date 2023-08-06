@@ -1,0 +1,19 @@
+.featured {
+  .wrapper {
+    display: flow-root;
+  }
+  
+  .box {
+    float: left;
+    margin-right: 30px;
+    padding-right: 1em;
+  }
+  
+  ul {
+    margin: 0px;
+  }
+  
+  p, li {
+    font-size: 1.1rem;
+  }
+}
