@@ -19,3 +19,27 @@ published: true
     {% include projects/{{ project.card }}.html title=title description=description image=image content=content %}
   {% endfor %}
 </div>
+
+<p></p>
+
+<div class="medium-card-container">
+  {% assign pro-projects = site.projects | where:"category","pro" | where:"card","medium" | sort:"date" | reverse%}
+  {% for project in pro-projects %}
+    {% capture title %}{{ project.title }}{% endcapture %}
+    {% capture description %}{{ project.description }}{% endcapture %}
+    {% capture image %}{{ project.image }}{% endcapture %}
+    {% capture content %}{{ project.content | markdownify }}{% endcapture %}
+    {% include projects/{{ project.card }}.html title=title description=description image=image content=content %}
+  {% endfor %}
+</div>
+
+<div class="large-card-container">
+  {% assign pro-projects = site.projects | where:"category","pro" | where:"card","large" | sort:"date" | reverse%}
+  {% for project in pro-projects %}
+    {% capture title %}{{ project.title }}{% endcapture %}
+    {% capture description %}{{ project.description }}{% endcapture %}
+    {% capture image %}{{ project.image }}{% endcapture %}
+    {% capture content %}{{ project.content | markdownify }}{% endcapture %}
+    {% include projects/{{ project.card }}.html title=title description=description image=image content=content %}
+  {% endfor %}
+</div>
