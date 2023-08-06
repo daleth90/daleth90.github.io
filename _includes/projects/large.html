@@ -1,0 +1,12 @@
+<div class="large card">
+  <h3>{{ include.title }}</h3>
+  {% if include.description != "" %}
+    <h6>{{ include.description }}</h6>
+  {% endif %}
+  {% if include.image != "" %}
+    <div class="box">
+      <img src="{{ include.image }}">
+    </div>
+  {% endif %}
+  {{ include.content }}
+</div>
