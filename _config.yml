@@ -17,8 +17,9 @@ linkedin: "wentaichi"
 github: "daleth90"
 
 # Markdown
-highlighter: rouge
 markdown: kramdown
+highlighter: rouge
+excerpt_separator: <!--more-->
 
 # Tracker
 analytics:
