@@ -1,0 +1,12 @@
+applause-button.theme {
+  width: 80px;
+  height: 80px;
+  font-size: 25px;
+  margin: 0 auto;
+  margin-top: 60px;
+
+  .count-container {
+    top: -50%;
+    color: inherit;
+  }
+}
