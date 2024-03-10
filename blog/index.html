@@ -7,10 +7,15 @@ layout: default
 
 <div class="article-list">
   {% for post in paginator.posts %}
-    <h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <h2>
+      <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
+      <span class="clap-count" data-url="{{ post.url | absolute_url }}"></span>
+    </h2>
     <p>{{post.excerpt | strip_html}}</p>
   {% endfor %}
 </div>
+
+{% include applause-count.html %}
 
 <!-- pagination -->
 {% if paginator.total_pages > 1 %}

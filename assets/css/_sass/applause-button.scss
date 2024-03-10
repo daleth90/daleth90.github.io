@@ -10,3 +10,29 @@ applause-button.theme {
     color: inherit;
   }
 }
+
+.clap-count {
+  @extend h4;
+  font-size: 20px;
+  color: $brand-color;
+  display: none;
+
+  svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    padding: 0px 3px 3px 3px;
+  }
+
+  .flat {
+    fill: $body-bg;
+    
+    @media (prefers-color-scheme: dark) {
+      fill: $body-bg-dark;
+    }
+  }
+
+  .outline {
+    fill: $brand-color;
+  }
+}
