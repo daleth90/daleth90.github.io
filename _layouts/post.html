@@ -6,11 +6,7 @@ layout: default
 
 {{content}}
 
-<!-- Only for posts -->
+<!-- Comments only for posts -->
 {% if page.path contains '_posts' %}
-  {% capture applause_url %}{{ page.url | absolute_url }}{% endcapture %}
-  {% include applause-button.html url=applause_url %}
-  {% if site.disqus-shortname %}
-    {% include disqus.html %}
-  {% endif %}
+  {% include giscus.html %}
 {% endif %}
