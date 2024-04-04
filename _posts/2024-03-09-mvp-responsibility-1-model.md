@@ -2,7 +2,9 @@
 layout: post
 title: MVP 模式的職責區分 (1) - Model
 tags:
+  - c#
   - unity
+  - mvc
   - mvp
 ---
 

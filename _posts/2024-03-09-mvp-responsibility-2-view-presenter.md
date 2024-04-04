@@ -2,7 +2,9 @@
 layout: post
 title: MVP 模式的職責區分 (2) - View 與 Presenter
 tags:
+  - c#
   - unity
+  - mvc
   - mvp
 ---
 
