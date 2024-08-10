@@ -187,3 +187,5 @@ public async Task EnterGameAsync() {
 我們可以發現，雖然 Result 模式把錯誤明確化了，但是程式碼明顯變得......蠻冗長的。在比較簡單的狀況下，我們可以直接用 Result 模式解決問題，但若是碰到比較多步驟的流程，程式碼真的可以長到難以維護，我們可能會需要更好的做法。
 
 你可能會想到 Reactive Programming (Rx)，但 Rx 處理的是事件響應，問題不太一樣。我們可以使用類似的 Railway Oriented Programming 來改進。
+
+[下一篇：Result Pattern 與軌道導向程式設計](https://www.wentaichi.me/blog/result-pattern-and-railway-oriented-programming/)

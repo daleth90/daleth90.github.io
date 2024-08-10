@@ -7,6 +7,8 @@ tags:
   - error-handler
 ---
 
+[上一篇：Result Pattern 與錯誤處理](https://www.wentaichi.me/blog/result-pattern-and-error-handler/)
+
 按照 Result Pattern 的概念，我們經常需要處理各種錯誤。但是為了適當的處理錯誤，程式碼總是會變得太長，導致不容易閱讀。像是以下的程式碼：
 
 <!--more-->
