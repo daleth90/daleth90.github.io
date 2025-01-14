@@ -22,7 +22,7 @@ highlighter: rouge
 excerpt_separator: <!--more-->
 
 # Tracker
-analytics:
+analytics: G-LPG10JQ34R
 
 # Optimization -> compress.html
 compress_html:
