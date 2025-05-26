@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "Wen Taichi",
-    pageTitleSuffix: "",
+    pageTitleSuffix: " | Wen Taichi",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
