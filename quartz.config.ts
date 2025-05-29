@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "zh-TW",
     baseUrl: "wentaichi.me",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
