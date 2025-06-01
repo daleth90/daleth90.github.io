@@ -68,7 +68,7 @@ public async Task EnterGameAsync() {
 
 你可以想像每個工作項目都有兩條軌道，成功軌道與失敗軌道。你自己按照工作流程拼接好所有的軌道後，讓你的流程火車就從成功軌道開始走，工作項目本身就會幫你把流程火車引導至它該去的地方，你只要在終點等著結果即可。
 
-![[rop-example.png]]
+![ROP Example](./rop-example.png)
 
 畢竟 XOP (X 可以替換成任何字母) 這個縮寫好像已經被濫用了，這個做法的影響範圍也不像 OOP 這麼大，ROP 就只是單純用來處理錯誤流程的概念。你可以把這個寫法想像成 "Railway Model of Control Flow"，可能會比較好理解。
 
@@ -146,7 +146,7 @@ private void DoSomething(T t)
 
 Finally 代表軌道的終點，最後成功軌道和失敗軌道會匯流，取得最後的結果，或是執行最後的工作。
 
-![[rop-finally-example.png]]
+![ROP Finally Example](./rop-finally-example.png)
 
 ```csharp
 public static void Finally<T>(this Result<T> result, Action<Result<T>> action)

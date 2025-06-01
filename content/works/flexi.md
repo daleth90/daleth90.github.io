@@ -2,7 +2,7 @@
 title: Flexi
 ---
 
-[<img src="https://repository-images.githubusercontent.com/515648023/56576bac-cdbc-4b1f-8a2e-f02c98251a83">](https://github.com/PhysaliaStudio/Flexi)
+[<img src="https://repository-images.githubusercontent.com/515648023/56576bac-cdbc-4b1f-8a2e-f02c98251a83" alt="Flexi Cover">](https://github.com/PhysaliaStudio/Flexi)
 
 [PhysaliaStudio/Flexi: Unity Gameplay Ability System Framework](https://github.com/PhysaliaStudio/Flexi)
 
