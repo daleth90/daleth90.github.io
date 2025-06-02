@@ -21,3 +21,11 @@ title: Flexi
 
 ![Flexi Editor](https://raw.githubusercontent.com/wiki/PhysaliaStudio/Flexi/images/flexi-editor.gif)
 ![Card Game Sample](https://raw.githubusercontent.com/wiki/PhysaliaStudio/Flexi/images/card-game-samples-1.gif)
+
+## 資料儲存
+
+我曾經試著用 [NodeGraphProcessor](https://github.com/alelievr/NodeGraphProcessor) 與 [xNode](https://github.com/Siccity/xNode) 做技能編輯器，但這兩個套件的資料儲存都得依賴 `ScriptableObject`，而我希望我的工具可以直接在純 C# 環境運作，所以這兩個套件沒辦法符合我的需求。我也希望這個套件有機會能移植到 Godot 上使用，我可不想到 Godot 的時候要從頭寫一個。
+
+所以我看上了 GraphView，要特別提的是 NodeGraphProcessor 本來就是基於 GraphView 擴充而來的，但目前 GraphView 還在實驗階段，應該會經歷各種規格改動。
+
+所以在儲存格式上我參考了 [NodeCanvas](https://assetstore.unity.com/packages/tools/visual-scripting/nodecanvas-14914) 與 Bolt (現在的 Visual Scripting) 的做法，自己定義序列化 JSON 的邏輯，可以在裡面藏各種隱藏資料，才能比較方便的進行各種規格變更，並把資料和編輯器渲染的相依性分開。
