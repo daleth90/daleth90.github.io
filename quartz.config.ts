@@ -12,9 +12,7 @@ const config: QuartzConfig = {
     pageTitleSuffix: " | Wen Taichi",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "zh-TW",
     baseUrl: "wentaichi.me",
     ignorePatterns: ["private", "templates", ".obsidian"],
