@@ -12,7 +12,10 @@ const config: QuartzConfig = {
     pageTitleSuffix: " | Wen Taichi",
     enableSPA: true,
     enablePopovers: true,
-    analytics: null,
+    analytics: {
+      provider: 'goatcounter',
+      websiteId: 'wentaichi',
+    },
     locale: "zh-TW",
     baseUrl: "wentaichi.me",
     ignorePatterns: ["private", "templates", ".obsidian"],
