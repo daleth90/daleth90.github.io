@@ -29,6 +29,11 @@ export const sharedPageComponents: SharedLayout = {
 }
 
 // components for pages that display a single page (e.g. a single note)
+function explorerFilter(node: string): boolean {
+  const omit = ["portfolio"]
+  return !omit.some(s => node.slug.toLowerCase().includes(s))
+}
+
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
@@ -56,10 +61,7 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      filterFn: (node) => {
-        const omit = ["portfolio"]
-        return !omit.some(s => node.slug.toLowerCase().includes(s))
-      },
+      filterFn: explorerFilter,
 	}),
   ],
   right: [
@@ -84,7 +86,9 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: explorerFilter,
+    }),
   ],
   right: [],
 }
