@@ -13,17 +13,17 @@ export const sharedPageComponents: SharedLayout = {
         repoId: 'R_kgDOOx11vw',
         category: 'Comments',
         categoryId: 'DIC_kwDOOx11v84CqrSE',
-		mapping: 'url',
-		strict: true,
-		reactionsEnabled: true,
-		inputPosition: 'top',
+        mapping: 'url',
+        strict: true,
+        reactionsEnabled: true,
+        inputPosition: 'top',
       }
     }),
   ],
   footer: Component.Footer({
     links: {
       "GitHub": "https://github.com/daleth90",
-	  "LinkedIn": "https://www.linkedin.com/in/wentaichi/",
+      "LinkedIn": "https://www.linkedin.com/in/wentaichi/",
     },
   }),
 }
