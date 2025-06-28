@@ -52,7 +52,12 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => {
+        const omit = ["portfolio"]
+        return !omit.some(s => node.slug.toLowerCase().includes(s))
+      },
+	}),
   ],
   right: [
     Component.Graph(),
