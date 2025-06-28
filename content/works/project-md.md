@@ -2,7 +2,7 @@
 title: Project MD
 ---
 
-![Projectmd Gameplay](./projectmd_gameplay.gif)
+![Projectmd Gameplay](projectmd_gameplay.gif)
 
 這個專案算是轉捩點，驗證我作為工程師是否足夠獨當一面。  
 這個專案只做完核心玩法，團隊就解散了。所以還沒驗證到外圍開發的部分。  
