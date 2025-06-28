@@ -1,7 +1,5 @@
 ---
 title: Git 合併地獄 (Merge Hell)
-tags:
-  - git
 ---
 
 ![Git Rainbow](./git-rainbow.png)

@@ -1,7 +1,5 @@
 ---
 title: Git 約定式提交
-tags:
-  - git
 ---
 
 [約定式提交 (Conventional Commits)](https://www.conventionalcommits.org) 是一種提交訊息格式的規範，提交格式是：
