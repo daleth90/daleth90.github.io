@@ -5,6 +5,7 @@ Allow: /
 Disallow: /works/
 Disallow: /portfolio-assets/
 Disallow: /portfolio
+Disallow: /portfolio_en
 Disallow: /git/$
 Disallow: /management/$
 Disallow: /programming/$

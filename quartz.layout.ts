@@ -40,7 +40,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ConditionalRender({
       component: Component.Breadcrumbs(),
       condition: (page) => {
-        const omit = new Set(["index", "portfolio"])
+        const omit = new Set(["index", "portfolio", "portfolio_en"])
         return page.fileData.slug !== undefined && !omit.has(page.fileData.slug.toLowerCase())
       },
     }),
