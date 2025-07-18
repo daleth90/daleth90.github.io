@@ -4,7 +4,7 @@ title: 數位花園
 
 數位花園不是個人部落格的衍生，並不是要展示已經修飾完成過的文章，而是展示一些隨意、還在建設中的 Wiki 式文章。文章不會像部落格那樣照時間排序，而是採用筆記連結的形式互相關聯。
 
-> They’re not following the conventions of the “_personal blog_,” as we’ve come to know it. Rather than presenting a set of polished articles, displayed in reverse chronological order, these sites act more like free form, work-in-progress wikis.
+> They're not following the conventions of the "_personal blog_", as we've come to know it. Rather than presenting a set of polished articles, displayed in reverse chronological order, these sites act more like free form, work-in-progress wikis.
 
 這讓我想到鄉下一些自家的花園，屋主本身並沒有特別要展示什麼的意思，雖然是半公開給別人看，但只是照自己的意思，慢慢地把花園變得茁壯。
 
