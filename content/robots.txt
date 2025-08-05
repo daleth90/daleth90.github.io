@@ -3,6 +3,7 @@ Sitemap: https://wentaichi.me/sitemap.xml
 User-agent: *
 Allow: /
 Disallow: /works/
+Disallow: /life/
 Disallow: /portfolio-assets/
 Disallow: /portfolio
 Disallow: /portfolio_en
