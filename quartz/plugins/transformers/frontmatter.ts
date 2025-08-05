@@ -150,6 +150,7 @@ declare module "vfile" {
         enableToc: string
         cssclasses: string[]
         socialImage: string
+        noindex: boolean | string
         comments: boolean | string
       }>
   }

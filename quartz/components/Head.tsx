@@ -26,6 +26,9 @@ export default (() => {
     const path = url.pathname as FullSlug
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
     const iconPath = joinSegments(baseDir, "static/icon.png")
+    const noindex: boolean = 
+      typeof fileData.frontmatter?.noindex !== "undefined" &&
+      (fileData.frontmatter?.noindex === true || fileData.frontmatter?.noindex === "true")
 
     // Url of current page
     const socialUrl =
@@ -40,7 +43,8 @@ export default (() => {
       <head>
         <title>{title}</title>
         <meta charSet="utf-8" />
-		<link rel="canonical" href={fileData.slug === "index" ? url.toString() : socialUrl} />
+		    <link rel="canonical" href={fileData.slug === "index" ? url.toString() : socialUrl} />
+        {noindex && <meta name="robots" content="noindex" />}
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
           <>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
