@@ -1,5 +1,6 @@
 ---
 title: Flexi
+noindex: "true"
 ---
 
 [<img src="https://repository-images.githubusercontent.com/515648023/56576bac-cdbc-4b1f-8a2e-f02c98251a83" alt="Flexi Cover">](https://github.com/PhysaliaStudio/Flexi)

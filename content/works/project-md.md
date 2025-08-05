@@ -1,5 +1,6 @@
 ---
 title: Project MD
+noindex: "true"
 ---
 
 ![Projectmd Gameplay](projectmd_gameplay.gif)
