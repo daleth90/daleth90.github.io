@@ -6,6 +6,8 @@ comments: "false"
 
 <img src="https://avatars.githubusercontent.com/u/12347255?v=4" width=100 alt="Header">
 
+[[portfolio_en|English]]
+
 我是**温太齊**，Unity 遊戲工程師，**擁有 10 年工作經驗**，主要製作中小型專案。通常負責架構開發與通用功能，像是核心玩法、UI、編輯器，也會負責管理 Git。也經常負責研究與提供解決方案，以及指導初階工程師。
 
 不論商業工作或獨立專案，如果對我的能力有興趣，或只是想討論，歡迎聯絡！

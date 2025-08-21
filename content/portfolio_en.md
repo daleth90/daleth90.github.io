@@ -6,6 +6,8 @@ comments: "false"
 
 <img src="https://avatars.githubusercontent.com/u/12347255?v=4" width=100 alt="Header">
 
+[[portfolio|中文]]
+
 I'm **Wen Taichi**, a Unity game developer with **10 years of professional experience**, primarily focused on small to mid-sized projects. I typically handle system architecture and general features, such as core gameplay, UI, and custom editor tools. I also manage Git repositories and often take on responsibilities like technical research, solution design, and mentoring junior engineers.
 
 Feel free to reach out if you're interested in working with me, whether for commercial work or indie projects, or just want to have a conversation!
