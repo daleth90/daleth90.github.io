@@ -31,7 +31,7 @@ export const sharedPageComponents: SharedLayout = {
 
 // components for pages that display a single page (e.g. a single note)
 function explorerFilter(node: string): boolean {
-  const omit = ["portfolio"]
+  const omit = ["portfolio_en"]
   return !omit.some(s => node.slug.toLowerCase().includes(s))
 }
 
