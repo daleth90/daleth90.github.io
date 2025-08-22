@@ -19,7 +19,7 @@ const config: QuartzConfig = {
     locale: "zh-TW",
     baseUrl: "wentaichi.me",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
