@@ -1,6 +1,5 @@
 ---
 title: 作品集
-created: 2025-06-28
 modified: 2025-08-22
 noindex: "true"
 comments: "false"
