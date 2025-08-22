@@ -1,4 +1,4 @@
-import { Date, getDate } from "./Date"
+import { Date } from "./Date"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import readingTime from "reading-time"
 import { classNames } from "../util/lang"
@@ -19,6 +19,14 @@ const defaultOptions: ContentMetaOptions = {
   showComma: true,
 }
 
+function compareDate(a: Date, b: Date): number {
+    const dateA = new globalThis.Date(a.getFullYear(), a.getMonth(), a.getDate())
+    const dateB = new globalThis.Date(b.getFullYear(), b.getMonth(), b.getDate())
+    if (dateA < dateB) return -1
+    if (dateA > dateB) return 1
+    return 0
+}
+
 export default ((opts?: Partial<ContentMetaOptions>) => {
   // Merge options with defaults
   const options: ContentMetaOptions = { ...defaultOptions, ...opts }
@@ -30,7 +38,15 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       const segments: (string | JSX.Element)[] = []
 
       if (fileData.dates) {
-        segments.push(<Date date={getDate(cfg, fileData)!} locale={cfg.locale} />)
+        // If created date and modified date are equal, display only one date.
+        // If created date is later than modified date, it means failed to get created date, display modified date.
+        const showPeriod = compareDate(fileData.dates.created, fileData.dates.modified) < 0
+        if (showPeriod) {
+          segments.push(<span><Date date={fileData.dates.created} locale={cfg.locale} /> - <Date date={fileData.dates.modified} locale={cfg.locale} /></span>)
+        }
+        else {
+          segments.push(<span><Date date={fileData.dates.modified} locale={cfg.locale} /></span>)
+        }
       }
 
       // Display reading time if enabled
