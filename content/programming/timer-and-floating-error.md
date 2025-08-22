@@ -1,5 +1,7 @@
 ---
 title: 計時器與浮點數誤差
+created: 2025-07-18
+modified: 2025-07-18
 ---
 
 寫計時相關功能時，使用 float 變數，在每個 `Update()` 加上或減去 `deltaTime`，是不準確的做法。
@@ -43,6 +45,7 @@ public class Timer : MonoBehaviour
     }
 }
 ```
+
 ## References
 
 - https://www.facebook.com/share/p/16fELxKCbc/

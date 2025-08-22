@@ -1,5 +1,7 @@
 ---
 title: Git 合併地獄 (Merge Hell)
+created: 2022-05-28
+modified: 2025-05-28
 ---
 
 ![Git Rainbow](./git-rainbow.png)

@@ -1,5 +1,7 @@
 ---
 title: 解決 WebGL 的 null function 錯誤
+created: 2025-07-24
+modified: 2025-08-22
 ---
 
 ## 問題
@@ -16,8 +18,8 @@ RuntimeError: null function or function signature mismatch
 
 Debug Symbols 有 3 個選項：
 - Off：就是沒有 Debug Symbols，所以你看到的 Stack Trace 都是人類看不懂的東西。
-- External：建置時把 Debug Symbols 寫在外部檔案，需要符號資訊的時候得先經過額外的網路下載，所以會比較慢，但初始下載的檔案會比 Embeded 小。
-- Embeded：建置時把 Debug Symbols 直接寫在內部，所以取得符號資訊會比較快，但缺點就是初始下載的檔案比較大。開發偵錯時比較適合使用。
+- External：建置時把 Debug Symbols 寫在外部檔案，需要符號資訊的時候得先經過額外的網路下載，所以會比較慢，但初始下載的檔案會比 Embedded 小。
+- Embedded：建置時把 Debug Symbols 直接寫在內部，所以取得符號資訊會比較快，但缺點就是初始下載的檔案比較大。開發偵錯時比較適合使用。
 
 如果你對 WebGL 的特殊性還不熟悉，那可以先檢查看看你是不是有用到 WebGL 不支援的多執行緒或相關類型，特別是與 `System.Threading` 命名空間相關的 `Task` 類別。
 

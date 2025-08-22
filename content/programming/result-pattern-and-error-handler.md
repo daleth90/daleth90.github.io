@@ -1,5 +1,6 @@
 ---
 title: Result Pattern 與錯誤處理
+created: 2024-04-02
 modified: 2024-04-04
 ---
 

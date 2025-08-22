@@ -1,6 +1,9 @@
 ---
 title: 敏捷宣言的 12 項原則
+created: 2025-06-13
+modified: 2025-06-13
 ---
+
 [Principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html)
 
 > 我們遵守這些原則：

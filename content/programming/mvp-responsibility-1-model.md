@@ -1,6 +1,7 @@
 ---
 title: MVP 模式的職責區分 (1) - Model
-modified: 2024-03-09
+created: 2024-01-11
+modified: 2025-08-22
 ---
 
 **※ 雖然此篇與 Unity 比較有關，而且標題是 MVP，但是概念適用於現代的 MVx 系列。**
@@ -39,4 +40,4 @@ modified: 2024-03-09
 
 而 MVP 模式 (以及其它 MVx 系列) 本身的價值，最重要的就在於==「展示層與 Model 的分離」==，因為實作展示層與業務邏輯時的思考面向是不一樣的。這樣一來，開發業務邏輯時，就不用太考慮展示面的問題；開發展示層的時候，就只需要考慮 UI 面的呈現。
 
-[[mvp-responsibility-2-view-presenter]]
+下一篇：[[mvp-responsibility-2-view-presenter|MVP 模式的職責區分 (2) - View 與 Presenter]]

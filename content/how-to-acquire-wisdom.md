@@ -1,5 +1,7 @@
 ---
 title: How To Acquire Wisdom
+created: 2025-06-17
+modified: 2025-06-17
 noindex: "true"
 ---
 

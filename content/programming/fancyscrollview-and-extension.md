@@ -1,5 +1,7 @@
 ---
 title: FancyScrollView 與擴充
+created: 2025-06-13
+modified: 2025-06-13
 ---
 
 [setchi/FancyScrollView: A versatile Unity scroll view component that enables highly flexible animations.](https://github.com/setchi/FancyScrollView)

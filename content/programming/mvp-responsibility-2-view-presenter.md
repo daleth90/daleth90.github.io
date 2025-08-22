@@ -1,11 +1,12 @@
 ---
 title: MVP 模式的職責區分 (2) - View 與 Presenter
-modified: 2024-03-09
+created: 2024-03-09
+modified: 2025-08-22
 ---
 
 **※ 雖然此篇與 Unity 比較有關，而且標題是 MVP，但是概念適用於現代的 MVx 系列。**
 
-[[mvp-responsibility-1-model]]
+上一篇：[[mvp-responsibility-1-model|MVP 模式的職責區分 (1) - Model]]
 
 Presenter 的工作是站在 Model 與 View 中間協調兩邊的運作。一方面取得 Model 的資料與事件，根據展示需求傳達給 View；一方面接收使用者操作 View 的行為，決定如何與操作 Model 工作以及更進一步的展示。
 

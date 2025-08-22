@@ -1,5 +1,7 @@
 ---
 title: object 與 IntPtr 的轉換
+created: 2023-09-29
+modified: 2025-06-01
 ---
 
 透過 `GCHandle` 進行轉換，要注意需要透過 `GCHandle.Free()` 釋放記憶體，同時要注意釋放記憶體的時機。

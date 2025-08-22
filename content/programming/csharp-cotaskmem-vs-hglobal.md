@@ -1,5 +1,7 @@
 ---
 title: CoTaskMem v.s. HGlobal
+created: 2023-09-29
+modified: 2023-09-29
 ---
 
 `AllocCoTaskMem` 和 `AllocHGlobal` 是 [[csharp-marshal-class|Marshal 類別]]分配[[csharp-memory-types#非託管記憶體 (Unmanaged Memory)|非託管記憶體]]的 API。

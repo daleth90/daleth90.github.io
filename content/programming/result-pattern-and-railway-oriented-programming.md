@@ -1,5 +1,6 @@
 ---
 title: Result Pattern 與 Railway Oriented Programming
+created: 2024-03-21
 modified: 2024-06-10
 ---
 

@@ -1,6 +1,9 @@
 ---
 title: 重設 Unity 執行檔的解析度
+created: 2023-04-09
+modified: 2025-08-20
 ---
+
 ## Windows
 
 1. 開啟登錄編輯程式 (搜尋輸入 regedit)

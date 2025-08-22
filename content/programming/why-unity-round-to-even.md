@@ -1,5 +1,7 @@
 ---
 title: 為何 Unity 的 Round() 是往偶數捨入？
+created: 2024-05-09
+modified: 2024-05-11
 ---
 
 首先，.NET 預設的 `Round()` 就是這樣，我想 Unity 官方其實也沒想那麼多，就只是把原本只支援 `double` 的 `Math` 類別改成支援 `float` 而已。

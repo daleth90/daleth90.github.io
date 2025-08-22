@@ -1,5 +1,7 @@
 ---
 title: Git 最佳原則
+created: 2025-05-28
+modified: 2025-06-28
 ---
 
 以下的原則都是為了達成 [[git-core-purposes|Git 的核心目標]]。  

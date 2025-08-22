@@ -1,5 +1,7 @@
 ---
 title: Marshal 類別
+created: 2023-09-29
+modified: 2023-09-29
 ---
 
 `Marshal` 是一個用來處理[[csharp-memory-types#非託管記憶體 (Unmanaged Memory)|非託管記憶體]]的方法集合。主要有以下功能：

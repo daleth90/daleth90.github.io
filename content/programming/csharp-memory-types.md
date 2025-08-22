@@ -1,5 +1,7 @@
 ---
 title: C# 記憶體種類
+created: 2023-09-29
+modified: 2023-09-29
 ---
 
 ## 託管記憶體 (Managed Memory)

@@ -1,5 +1,7 @@
 ---
 title: 敏捷與許願
+created: 2025-06-09
+modified: 2025-06-09
 ---
 
 > [!info]

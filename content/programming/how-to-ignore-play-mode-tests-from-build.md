@@ -1,5 +1,7 @@
 ---
 title: 如何把 PlayMode 測試從建置移除？
+created: 2025-05-09
+modified: 2025-06-18
 ---
 
 使用內建選單建立 Test Assembly Folder 的時候，注意 Unity 會把 `UNITY_INCLUDE_TESTS` 加入這個 assembly 的 Define Constraints。

@@ -1,5 +1,7 @@
 ---
 title: Git 約定式提交
+created: 2022-06-18
+modified: 2022-06-18
 ---
 
 [約定式提交 (Conventional Commits)](https://www.conventionalcommits.org) 是一種提交訊息格式的規範，提交格式是：
@@ -30,4 +32,3 @@ fix(explorer): Prevent html from being scrollable when mobile explorer is open (
 3. 可以驅動開發者分割成數個小提交，方便利用 rebase 調整整份 PR
 
 如果有設定 git hook，就可以在提交時[[git-conventional-commits-validate-with-hook|自動進行格式檢查]]。
-

@@ -1,5 +1,7 @@
 ---
 title: 彼得原理
+created: 2025-07-21
+modified: 2025-07-21
 ---
 
 > [!note]

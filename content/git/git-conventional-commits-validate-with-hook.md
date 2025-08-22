@@ -1,5 +1,7 @@
 ---
 title: 使用 git hook 檢查約定式提交
+created: 2023-03-14
+modified: 2023-03-14
 ---
 
 [Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) 是一系列可以在特定時機點觸發的自定義腳本，我們可以用 commit-msg 這個 hook 來檢查使用者的提交是否符合[[git-conventional-commits|約定式提交]]的規範。如果以非零的數值退出，就視為失敗，Git 會放棄提交。

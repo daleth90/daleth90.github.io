@@ -1,6 +1,9 @@
 ---
 title: 敏捷宣言
+created: 2025-06-13
+modified: 2025-06-13
 ---
+
 [Manifesto for Agile Software Development](https://agilemanifesto.org/)
 
 > 藉著親自並協助他人進行軟體開發，我們正致力於發掘更優良的軟體開發方法。透過這樣的努力，我們已建立以下價值觀:

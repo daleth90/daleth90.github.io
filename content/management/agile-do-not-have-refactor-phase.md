@@ -1,5 +1,7 @@
 ---
 title: 敏捷不會有重構階段
+created: 2024-01-04
+modified: 2025-06-17
 ---
 
 這是 Martin Fowler 在 2011 年的 [Opportunistic Refactoring](https://martinfowler.com/bliki/OpportunisticRefactoring.html) 其中的概念。

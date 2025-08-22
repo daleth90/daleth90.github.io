@@ -1,5 +1,7 @@
 ---
 title: 雛形與產品設計
+created: 2025-07-09
+modified: 2025-07-09
 ---
 
 > [!info]
