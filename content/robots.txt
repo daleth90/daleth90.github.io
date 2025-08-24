@@ -2,6 +2,3 @@ Sitemap: https://wentaichi.me/sitemap.xml
 
 User-agent: *
 Allow: /
-Disallow: /portfolio-assets/
-Disallow: /portfolio
-Disallow: /portfolio_en
