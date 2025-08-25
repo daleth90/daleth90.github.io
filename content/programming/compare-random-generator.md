@@ -1,7 +1,7 @@
 ---
 title: 亂數產生器演算法比較
 created: 2025-08-15
-modified: 2025-08-22
+modified: 2025-08-25
 ---
 
 ## 線性同餘生成器 (LCG)
@@ -10,7 +10,7 @@ modified: 2025-08-22
 
 而 [Lehmer RNG](https://en.wikipedia.org/wiki/Lehmer_random_number_generator) 是網路上很容易查到的演算法，它也是一種 LCG。特性是 c = 0，等於只有乘法項，所以又稱為 Multiplicative Linear Congruential Generator (MLCG)。因為 MLCG 只是 LCG 的一種集合，所以一起討論比較方便。
 
-但因為亂數品質和破解問題，[Numerical Recipes 第三版](https://numerical.recipes/book.html)的 7.1 節開頭和 7.1.1 節，有跟你說為啥==不要用 LCG 這種爛東西==。雖然做遊戲通常不太需要擔心亂數安全性問題，不過我自己測試的確覺得大部份的隨機品質真的蠻爛的。
+但因為亂數品質和破解問題，[Numerical Recipes 第三版](https://numerical.recipes/book.html)的 7.1 節開頭和 7.1.1 節，有跟你說為啥==不要用 LCG 這種爛東西==。雖然做遊戲通常不太需要擔心亂數安全性問題，不過我自己測試的確覺得大部份的隨機品質真的蠻爛的，網路上容易查到的 [32 位元版本](https://learn.microsoft.com/en-us/archive/msdn-magazine/2016/august/test-run-lightweight-random-number-generation)還特別爛。
 
 ```csharp
 public class RandomGenerator
