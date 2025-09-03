@@ -27,6 +27,6 @@ noindex: "true"
 5. 關火，加入步驟1的毛豆、紅椒並攪拌均勻。
 6. 白飯盛盤，淋上咖哩醬汁，即完成。
 
-## Source
+## 來源
 
 - https://www.housefoods.com.tw/recipe/rcp_0203.html
