@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import { QuartzPluginData } from "./quartz/plugins/vfile"
+import { FileTrieNode } from "./quartz/util/fileTrie"
 import { isFolderPath } from "./quartz/util/path"
 import * as Component from "./quartz/components"
 
@@ -52,7 +53,7 @@ export const sharedPageComponents: SharedLayout = {
 }
 
 // components for pages that display a single page (e.g. a single note)
-function explorerFilter(node: string): boolean {
+function explorerFilter(node: FileTrieNode): boolean {
   const omit = ["portfolio_en"]
   return !omit.some(s => node.slug.toLowerCase().includes(s))
 }
