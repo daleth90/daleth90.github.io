@@ -1,10 +1,18 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
-import * as Component from "./quartz/components"
 import { QuartzPluginData } from "./quartz/plugins/vfile"
+import { isFolderPath } from "./quartz/util/path"
+import * as Component from "./quartz/components"
 
 function recentNotesFilter(data: QuartzPluginData): boolean {
-  const omit = new Set(["index", "portfolio", "portfolio_en"])
-  return !omit.has(data.slug!.toLowerCase())
+  if (data.slug === "index") return false
+  if (isFolderPath(data.slug ?? "")) return false
+
+  if (typeof data.frontmatter?.recentnotes !== "undefined" &&
+      (data.frontmatter?.recentnotes === false || data.frontmatter?.recentnotes === "false")) {
+    return false
+  }
+
+  return true
 }
   
 // components shared across all pages
