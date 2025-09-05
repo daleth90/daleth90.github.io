@@ -1,11 +1,25 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { QuartzPluginData } from "./quartz/plugins/vfile"
 
+function recentNotesFilter(data: QuartzPluginData): boolean {
+  const omit = new Set(["index", "portfolio", "portfolio_en"])
+  return !omit.has(data.slug!.toLowerCase())
+}
+  
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
+    Component.ConditionalRender({
+      component: Component.RecentNotes({
+        limit: 5,
+        showTags: false,
+        filter: recentNotesFilter,
+      }),
+      condition: (page) => page.fileData.slug === "index",
+    }),
     Component.Comments({
       provider: 'giscus',
       options: {
