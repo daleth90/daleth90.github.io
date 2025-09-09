@@ -1,10 +1,11 @@
 ---
 title: Result Pattern 與 Railway Oriented Programming
 created: 2024-03-21
-modified: 2024-06-10
+modified: 2025-09-09
 ---
+上一篇：[[result-pattern-and-error-handler|Result Pattern 與錯誤處理]]
 
-按照 Result Pattern 的概念，我們經常需要[[result-pattern-and-error-handler|處理各種錯誤]]。但是為了適當的處理錯誤，程式碼總是會變得太長，導致不容易閱讀。像是以下的程式碼：
+按照 Result Pattern 的概念，我們經常需要處理各種錯誤。但是為了適當的處理錯誤，程式碼總是會變得太長，導致不容易閱讀。像是以下的程式碼：
 
 ```csharp
 // 使用 Result 模式
@@ -63,7 +64,7 @@ public async Task EnterGameAsync() {
 }
 ```
 
-### Railway Oriented Programming
+## Railway Oriented Programming
 
 [Railway Oriented Programming (ROP)](https://fsharpforfunandprofit.com/rop/) 是 Scott Wlaschin 在 [NDC London 2014 的演講中](https://vimeo.com/113707214)公開發表的概念。這個概念就是專門處理錯誤處理流程的，用來解決我們上面看到的冗長程式碼。
 
@@ -79,9 +80,9 @@ C# 陣營有 Vladimir Khorikov 的 [CSharpFunctionalExtensions](https://github.c
 
 我自己整合原本的概念以及 [CSharpFunctionalExtensions](https://github.com/vkhorikov/CSharpFunctionalExtensions) 的 API，列出最常用的 API：Bind、Tap、Finally。
 
-### 常用的軌道 API
+## 常用的軌道 API
 
-##### Bind
+### Bind
 
 Bind 是最基本也最常用的軌道：
 1. 若前一項工作成功，則執行自己的工作，並且回傳成功或失敗
@@ -111,7 +112,7 @@ private Result<K> FindKWithT(T t)
 }
 ```
 
-##### Tap
+### Tap
 
 Tap 也是最基本的軌道之一，是平行線軌道，用來執行附加的工作，不會回傳結果：
 1. 若前一項工作成功，則執行自己的工作，且必定回傳前一項的成功
@@ -143,7 +144,7 @@ private void DoSomething(T t)
 }
 ```
 
-##### Finally
+### Finally
 
 Finally 代表軌道的終點，最後成功軌道和失敗軌道會匯流，取得最後的結果，或是執行最後的工作。
 
@@ -175,11 +176,11 @@ private HttpResponse CreateHttpResponse(Result<T> result)
 }
 ```
 
-### 衍生 API 範例
+## 衍生 API 範例
 
 基於以上概念，可以衍生出其它軌道流程。以下舉出幾個例子。
 
-##### TapDouble
+### TapDouble
 
 TapDouble 是基於 Tap 的改寫，有時候你會想要在前一項工作失敗時做些事情，在兩條軌道上都可以執行工作：
 1. 若前一項工作成功，則執行自己的工作，且必定回傳成功
@@ -206,7 +207,7 @@ private void DoSomething(T t)
 }
 ```
 
-##### Compensate
+### Compensate
 
 把前一項工作失敗，透過某些特殊工作讓它再轉換成成功的結果。
 
@@ -222,7 +223,7 @@ public static Result<T> Compensate<T>(this Result<T> result, Func<Result<T>> fun
 }
 ```
 
-##### BindRetry
+### BindRetry
 
 有些工作項目會被預期失敗，像是 WebRequest 逾時的時候，我們就會需要重試幾次。
 
@@ -267,8 +268,8 @@ public static async Task<Result> BindWithRetry(this Result result,
 }
 ```
 
-### 總結
+## 總結
 
 Railway Oriented Programming 專門用來處理會出現錯誤的工作流程，讓你寫出更容易閱讀的程式碼。當然不要[濫用](https://fsharpforfunandprofit.com/posts/against-railway-oriented-programming/)在不符合這個情境的狀況。
 
-雖然我整理出來的基本 API 只有 3 個，但依照類似的概念可以再衍生出更多不同的軌道形狀與 API，[CSharpFunctionalExtensions](https://github.com/vkhorikov/CSharpFunctionalExtensions) 提供的 API 當然更多，但也不要被套件的 API 綁死，畢竟都是建立在 Result 的擴充方法，我自己也會根據專案習慣寫出適當的衍生 API，有需要的時候你也可以依樣畫葫蘆來寫出自己需要的軌道形狀。
+雖然我整理出來的基本 API 只有 3 個，但依照類似的概念可以再衍生出更多不同的軌道形狀與 API，[CSharpFunctionalExtensions](https://github.com/vkhorikov/CSharpFunctionalExtensions) 提供的 API 當然更多，但也不要被套件的 API 綁死，畢竟都是建立在 Result 的擴充方法，我自己也會根據專案狀況來寫適當的衍生 API，有需要的時候你也可以依樣畫葫蘆來寫出自己需要的軌道形狀。

@@ -1,7 +1,7 @@
 ---
 title: Result Pattern 與錯誤處理
 created: 2024-04-02
-modified: 2024-04-04
+modified: 2025-09-09
 ---
 
 有些狀況下，我們會有個流程進行一系列的工作。但每一個步驟都有可能失敗，而且失敗的狀況還
@@ -19,7 +19,7 @@ public async Task EnterGameAsync() {
 }
 ```
 
-### Error Class
+## Error Class
 
 首先為了統一大部份的錯誤處理流程，我們會需要一個名為 Error 的類別。每個人對 Error 物件的需求不盡相同，所以實際的欄位可根據需求調整，但總之需要這樣子的物件。我通常會寫個名為 ErrorCode 的 enum 來定義各種錯誤。有時候我們也會想要知道更細節的錯誤資訊，因此又會需要 string 來保存錯誤訊息。
 
@@ -52,7 +52,7 @@ public class Error
 }
 ```
 
-### Result Class
+## Result Class
 
 接著我們製作了一個名為 Result 的物件。成功時，我們取得該步驟所需回傳的物件；失敗時，我們處理 Error 物件。
 
@@ -129,7 +129,7 @@ public class Result<T> : Result
 }
 ```
 
-### 結果
+## 結果
 
 原本的程式碼調整後如下。
 
@@ -177,8 +177,10 @@ public async Task EnterGameAsync() {
 }
 ```
 
-### 再改進
+## 再改進
 
 我們可以發現，雖然 Result 模式把錯誤明確化了，但是程式碼明顯變得......蠻冗長的。在比較簡單的狀況下，我們可以直接用 Result 模式解決問題，但若是碰到比較多步驟的流程，程式碼真的可以長到難以維護，我們可能會需要更好的做法。
 
-你可能會想到 Reactive Programming (Rx)，但 Rx 處理的是事件響應，問題不太一樣。我們可以使用類似的 [[result-pattern-and-railway-oriented-programming|Railway Oriented Programming]] 來改進。
+你可能會想到 Reactive Programming (Rx)，不過 Rx 處理的是事件響應，要解決的問題不太一樣，但感覺的確是有點相似。我們可以使用類似的 Railway Oriented Programming 來改進。
+
+下一篇：[[result-pattern-and-railway-oriented-programming|# Result Pattern 與 Railway Oriented Programming]]
