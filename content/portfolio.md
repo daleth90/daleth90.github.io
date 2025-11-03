@@ -1,6 +1,6 @@
 ---
 title: 作品集
-modified: 2025-08-22
+modified: 2025-11-03
 noindex: "true"
 recentnotes: "false"
 comments: "false"
@@ -10,7 +10,7 @@ comments: "false"
 
 [[portfolio_en|English]]
 
-我是**温太齊**，Unity 遊戲工程師，**擁有 10 年工作經驗**，主要製作中小型專案。通常負責架構開發與通用功能，像是核心玩法、UI、編輯器，也會負責管理 Git。也經常負責研究與提供解決方案，以及指導初階工程師。
+我是**温太齊**，Unity 遊戲工程師，**擁有 10 年工作經驗**，主要製作中小型專案。通常負責架構開發與通用功能，像是核心玩法、UI、編輯器。能夠管理 Git 與工作流，也經常負責研究與提供解決方案。
 
 不論商業工作或獨立專案，如果對我的能力有興趣，或只是想討論，歡迎聯絡！
 - [GitHub](https://github.com/daleth90)

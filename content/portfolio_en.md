@@ -1,6 +1,6 @@
 ---
 title: Portfolio
-modified: 2025-08-22
+modified: 2025-11-03
 noindex: "true"
 recentnotes: "false"
 comments: "false"
@@ -10,7 +10,7 @@ comments: "false"
 
 [[portfolio|中文]]
 
-I'm **Wen Taichi**, a Unity game developer with **10 years of professional experience**, primarily focused on small to mid-sized projects. I typically handle system architecture and general features, such as core gameplay, UI, and custom editor tools. I also manage Git repositories and often take on responsibilities like technical research, solution design, and mentoring junior engineers.
+I'm **Wen Taichi**, a Unity game developer with **10 years of professional experience**, primarily focused on small to mid-sized projects. I typically handle system architecture and general features, such as core gameplay, UI, and custom editor tools. I also manage Git repositories and workflow, and often take on responsibilities like technical research and solution design.
 
 Feel free to reach out if you're interested in working with me, whether for commercial work or indie projects, or just want to have a conversation!
 - [GitHub](https://github.com/daleth90)
