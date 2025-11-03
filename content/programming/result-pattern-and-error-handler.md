@@ -183,4 +183,4 @@ public async Task EnterGameAsync() {
 
 你可能會想到 Reactive Programming (Rx)，不過 Rx 處理的是事件響應，要解決的問題不太一樣，但感覺的確是有點相似。我們可以使用類似的 Railway Oriented Programming 來改進。
 
-下一篇：[[result-pattern-and-railway-oriented-programming|# Result Pattern 與 Railway Oriented Programming]]
+下一篇：[[result-pattern-and-railway-oriented-programming|Result Pattern 與 Railway Oriented Programming]]
