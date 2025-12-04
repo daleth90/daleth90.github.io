@@ -1,24 +1,43 @@
 ---
 title: Index
-modified: 2025-11-13
+modified: 2025-12-04
 ---
 
 哈囉！我是温太齊！這裡是我的個人網站！
 
-這個網站採用[[digital-garden|數位花園的方式]]，存放與展示我自己想法的筆記。由於我是 Unity 遊戲工程師，大部分的筆記內容都圍繞在遊戲開發與設計上，但不限於技能紀錄，也包含設計思考、讀書紀錄。
-
-> [!example] 入口導覽
-> 想找特定主題的話，用左上方的搜尋列會比較快。
-> - 🎯 [GitHub](https://github.com/daleth90)、[[portfolio|工作作品集]]
-> - ⚙️ [[programming/index|Unity 或通用工程筆記]]
-> - 🌿 [[git/index|Git 參考概念]]
-> - 🎨 [[gamedesign/index|遊戲設計學習筆記]] — 學習中，想法還不成熟，歡迎討論
-> - 🗺️ [[how-to-acquire-wisdom|如何獲得智慧？]]
+這個網站用來記錄與展示自我想法的筆記。由於我是 Unity 遊戲工程師，大部分的筆記內容都圍繞在遊戲開發與設計上，但不限於工作技能，也包含了我自己或價值觀相近的資訊與思考。
 
 > [!note]
-> 💬 交流會促進彼此想法的成長。  
-> 如果任何筆記引起你的思考，歡迎留下意見與討論。
+> 💬 交流可以促進彼此想法的成長。有任何想法歡迎留下意見討論！
 
-> [!caution]
-> 雖然不知道你是誰，但我在後台看的到你在這的瀏覽足跡喔！  
-> 特別是路過翻了一整圈的，至少在下面用 emoji 打個招呼吧！
+> [!tip]
+> ❤ 我在後台看的到你的瀏覽足跡喔！  
+> 特別是路過翻了一圈的，覺得不錯的話用 emoji 打個招呼吧！
+
+<div class="card-container">
+  <a href="digital-garden">
+    <div class="card-title">🌳 數位花園</div>
+    <div class="card-desc">這個網站的核心概念</div>
+  </a>
+  <a href="programming/index">
+    <div class="card-title">⚙️ Unity 與軟體開發</div>
+    <div class="card-desc">工作思考筆記</div>
+  </a>
+  <a href="gamedesign/index">
+    <div class="card-title">🎨 遊戲設計</div>
+    <div class="card-desc">學習筆記，想法還不成熟，歡迎指教</div>
+  </a>
+  <a href="portfolio">
+    <div class="card-title">📃 作品集</div>
+    <div class="card-desc">有工作機會的話可以聊聊</div>
+  </a>
+  <a href="concepts/index">
+    <div class="card-title">💡 各種想法</div>
+    <div class="card-desc">閱讀筆記、理論概念</div>
+  </a>
+  <a href="/how-to-acquire-wisdom" class="wide">
+    <div class="card-title">⭐ 如何獲得智慧？</div>
+    <div class="card-desc"></div>
+  </a>
+</div>
+
