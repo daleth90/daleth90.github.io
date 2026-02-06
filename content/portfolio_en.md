@@ -2,7 +2,7 @@
 title: Portfolio
 modified: 2025-11-03
 noindex: "true"
-recentnotes: "false"
+noRSS: "true"
 comments: "false"
 ---
 
