@@ -151,7 +151,7 @@ declare module "vfile" {
         cssclasses: string[]
         socialImage: string
         noindex: boolean | string
-        recentnotes: boolean | string
+        noRSS: boolean | string
         comments: boolean | string
       }>
   }

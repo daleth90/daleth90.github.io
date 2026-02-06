@@ -5,11 +5,9 @@ import { isFolderPath } from "./quartz/util/path"
 import * as Component from "./quartz/components"
 
 function recentNotesFilter(data: QuartzPluginData): boolean {
-  if (data.slug === "index") return false
   if (isFolderPath(data.slug ?? "")) return false
 
-  if (typeof data.frontmatter?.recentnotes !== "undefined" &&
-      (data.frontmatter?.recentnotes === false || data.frontmatter?.recentnotes === "false")) {
+  if (data.frontmatter?.noRSS === true || data.frontmatter?.noRSS === "true") {
     return false
   }
 
