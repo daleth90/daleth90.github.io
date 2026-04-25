@@ -1,10 +1,10 @@
 ---
-title: 從目標到限制理論 (TOC)
+title: 從目標到約束理論 (TOC)
 created: 2026-04-25
 modified: 2026-04-25
 ---
 
-[目標](https://www.taaze.tw/products/11100995084.html)是伊利雅胡．高德拉特（Eliyahu M. Goldratt）在 1984 年寫的企管書，用來解釋他的限制理論（Theory of Constraint, TOC）。這本書特別的地方在於，是用小說的體裁，以製造業背景的故事，來解釋他的論點。
+[目標](https://www.taaze.tw/products/11100995084.html)是伊利雅胡．高德拉特（Eliyahu M. Goldratt）在 1984 年寫的企管書，用來解釋他的約束理論（Theory of Constraint, TOC）。這本書特別的地方在於，是用小說的體裁，以製造業背景的故事，來解釋他的論點。
 
 > [!note]
 > 這本書是我新人時期的時候，主管叫我看的。經驗不足真的蠻難理解。當時只理解「目標只會有一個」，但影響夠大了。
